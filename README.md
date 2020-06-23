@@ -44,11 +44,18 @@ Linux distributions.
 
 ### Testing Docker
 To test your installation, just type:
-`docker --version`
+
+```
+docker --version
+```
+
 at the terminal/command prompt
 
 A successful install will result in something that looks like:
-`Docker version 17.05.0-ce, build 89658be`
+
+```
+Docker version 17.05.0-ce, build 89658be
+```
 
 ### Using Docker 
 
@@ -57,9 +64,9 @@ help you run the container locally from within the root
 directory of the project:
 
 
-- first build the docker container locally
+- first build the docker container locally (note the `.` at the end to specify "current directory")
 
-`docker build -t NAME_FOR_THE_CONTAINER`
+`docker build -t NAME_FOR_THE_CONTAINER .`
 
 - now run it (this should create the output files in your host system)
 
