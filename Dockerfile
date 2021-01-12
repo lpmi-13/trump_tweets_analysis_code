@@ -13,4 +13,4 @@ RUN apt-get update && \
 COPY . /home/analysis
 WORKDIR /home/analysis
 
-CMD Rscript script.R
+CMD ["Rscript", "script.R"]
